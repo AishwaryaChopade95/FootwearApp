@@ -1,0 +1,111 @@
+<!-- <div class="container">
+    <div class="row bg-primary-subtle p-3">
+        <div class="col-lg-8">
+            <div class="text-center " style="height:50px; color:black;font-size:30px;font-weight: bold;">Dashboard</div>
+        </div>
+
+    <div class="col-lg-4">
+        <button type="button" class="btn btn-warning" style="height:50px; color:black;font-size:30px;font-weight: bold;"><a routerLink="/lazy/productitem" >ADD PRODUCT</a></button>
+        <button type="button" class="btn btn-danger" style="height:50px; color:black;font-size:30px;font-weight: bold;"><a routerLink="/lazy/login">Logout</a></button>
+    </div>
+</div>
+ <div class="row">
+<app-sidebar></app-sidebar>
+<div class="col-lg-9">
+    <div class="col-lg-3 col-md-3">
+        <div class="card">
+            <img src="assets/images/team-1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4>Title 1</h4>
+                <p>gkhjjk</p>
+               <a href="" class="btn btn-success">Profile</a>
+                <a href="" class="btn btn-danger">Read More...</a> 
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3">
+        <div class="card">
+            <img src="assets/images/team-2.jpg" class="card-img-top"  alt="">
+            <div class="card-body">
+                <h4>Title 2</h4>
+                <p>Lorem </p>
+                 <a href="" class="btn btn-success">Profile</a>
+                <a href="" class="btn btn-danger">Read More...</a> 
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3">
+        <div class="card">
+            <img src="assets/images/team-3.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4>Title 3</h4>
+                <p>Lorem </p>
+                <a href="" class="btn btn-success">Profile</a>
+                <a href="" class="btn btn-danger">Read More...</a> 
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>  
+</div>
+ -->
+
+
+
+<div class="row bg-success-subtle ">
+    <div class="col-lg-8">
+
+        <h1 style="text-align: center;">Dashboard</h1>
+    </div>
+    <div class="col-lg-4 p-3">
+        <button type="button" class="btn btn-warning text-dark"><a routerLink="/lazy/addproduct">ADD PRODUCT</a></button>&nbsp;
+        <button type="button" (click)="logout()" class="btn btn-danger text-black"><a routerLink="/adminlogin">Logout</a></button>
+    </div>
+</div>
+<div class="row mx-auto p-5">
+
+    <div class="col-lg-12">
+        <div class="row ">
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="assets/images/produtcsimg.jpg" class="card-img-top" alt="">
+
+                    <h3 class="text-center">( {{products.length}} )</h3>
+                    
+                    <div class="card-body" style="text-align: center;">                        
+                        <a routerLink="/lazy/products" class="btn btn-success">PRODUCTS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="assets/images/ordersimg.jpg" class="card-img-top" alt="">
+                    
+                    <h3 class="text-center">( {{order.length}} )</h3>
+                    <div class="card-body" style="text-align: center;">
+                       
+                        
+                        <a routerLink="/lazy/orders" class="btn btn-success">ORDERS</a>
+                        
+                    </div>
+                </div>
+            </div> 
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="assets/images/productimg.jpg" class="card-img-top" alt="">
+                    <h3 class="text-center">(5)</h3>
+                    <div class="card-body" style="text-align: center;">
+                       
+                        
+                        <a href="" class="btn btn-success">COMMENTS</a>
+                        
+                    </div>
+                </div>
+            </div>
+           
+            
+            
+        </div>
+    </div>
+</div>

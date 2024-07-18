@@ -1,0 +1,77 @@
+<div class="container">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="row p-3">
+            <form [formGroup]="formdata" (ngSubmit)="btnSubmitData(formdata.value)">
+            <h2 style="text-align: center;">Billing Details</h2>
+            <div class="row bg-danger-subtle mt-6">
+                <div class="col-lg-8 p-3">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="name" style="color: black; font-size: 20px;">Name</label>
+                        <input type="text" id="name" formControlName="name" class="form-control text-black"
+                            placeholder="Enter Your Name">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="companyname" style="color: black; font-size: 20px;">Town/City</label>
+                        <input type="text" id="towncity" formControlName="city" class="form-control text-black"
+                            placeholder="Town or City">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="lname" style="color: black; font-size: 20px;">PIN Code</label>
+                        <input type="text" id="zippostalcode" formControlName="pincode" class="form-control text-black"
+                            placeholder="PIN CODE">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email" style="color: black; font-size: 20px;">E-mail Address</label>
+                        <input type="text" id="email" formControlName="email" class="form-control text-black"
+                            placeholder="State Province">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="Phone" style="color: black; font-size: 20px;">Phone Number</label>
+                        <input type="text" id="zippostalcode" formControlName="mblno" class="form-control text-black"
+                            placeholder="">
+                    </div>
+                </div>
+          </div>
+        
+            <div class="col-lg-4 p-3">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="cart-detail bg-dark-subtle">
+                            <h2>Cart Total</h2>
+                            <ul>
+                                <li>
+                                    <span>Subtotal</span> <span>$100.00</span>
+                                    <ul>
+                                        <li><span>1 x Product Name</span> <span>$99.00</span></li>
+                                        <li><span>1 x Product Name</span> <span>$78.00</span></li>
+                                    </ul>
+                                </li>
+                                <li><span>Shipping</span> <span>$0.00</span></li>
+                                <li><span>Order Total</span> <span>$180.00</span></li>
+                            </ul>
+                            <button type="submit" (click)="payNow()"   class="btn btn-primary">Place an order</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
